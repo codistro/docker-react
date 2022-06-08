@@ -7,4 +7,4 @@ before_install:
   - docker build -t codistro/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true codistro/docker-react npm run test -- --coverage
+  - docker run -e CI=true codistro/docker-react npm run test
